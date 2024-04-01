@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./style.css">
+<body>
+    <div class="myFriends" id="randdiv">
+      <h1 style="margin-bottom: 1em;">สุ่มจำนวนเพื่อน</h1>
+        <div class="button-rand">
+            <button class="rand" type="button" onclick="rand()">Random!</button>
+        </div>
+    </div>
+    <form id="input">
+        <h1 style="margin-bottom: 1em;">ใส่รายละเอียดข้อมูล</h1>
+    </form>
+    <div id="calculated-Data">
+            <div class="sum" onclick="showSum(this); this.onclick=null;">
+                <h2 style="margin-top: 1em;">ผลรวมอายุเพื่อนทั้งหมด</h2>
+                <h1 style="margin-top: 10%;" style="text-decoration: underline;" id="answer">แสดง</h1>
+            </div>
+            <div class="avg" onclick="showAvg(this); this.onclick=null;">
+                <h2 style="margin-top: 1em;">ค่าอายุเฉลี่ยของกลุ่มเพื่อน</h2>
+                <h1 style="margin-top: 10%;" style="text-decoration: underline;" id="average">แสดง</h1>
+            </div>
+            <div class="calc">
+                <div class="calculated">
+                    <div class="desc" onclick="showDesc()">
+                        <h2>แสดงคนอายุน้อยที่สุด</h2>
+                    </div>
+                    <div class="ascd" onclick="showAscd()">
+                        <h2>แสดงคนอายุมากที่สุด</h2>
+                    </div>
+                </div>
+            </div>
+        <div class="reset" onclick="reset()">
+            <h2>Reset</h2>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
